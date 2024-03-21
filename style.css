@@ -44,3 +44,11 @@ a:hover {
   color: green;
   font-size: 30px;
 }
+
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
