@@ -1,0 +1,48 @@
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#display {
+  font-size: 5rem;
+  border: 5px solid white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 30px;
+  transition: ease-in-out 1s;
+  margin-bottom: 20px;
+}
+
+#display:hover {
+  color: yellowgreen;
+  border: 5px solid yellowgreen;
+}
+
+button {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 15px;
+  transition-duration: 2s;
+  color: white;
+  cursor: pointer;
+}
+
+.start {
+  background-color: green;
+  margin-right: 15px;
+}
+.start:hover {
+  background-color: rgba(0, 128, 0, 0.80);
+}
+.stop {
+  background-color: red;
+}
+.stop:hover {
+  background-color: rgba(255, 0, 0, 0.70);
+}
