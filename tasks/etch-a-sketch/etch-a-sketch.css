@@ -1,0 +1,30 @@
+h1 {
+  color: red;
+  margin: 15px;
+  text-align: center;
+}
+
+.js-container {
+  max-width: 900px;
+  height: 900px;
+  display: grid;
+  margin: 0 auto;
+}
+
+.cell {
+  background-color: blueviolet;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.js-btn {
+  display: flex;
+  justify-self: center;
+  background-color: black;
+  color: yellow;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 auto;
+}
