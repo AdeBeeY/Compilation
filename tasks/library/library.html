@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="library.css">
+  <title>Library</title>
+</head>
+<body>
+  <div class="container">
+    <h1> A Mini Library</h1>
+    
+    <div id="header-container">
+      <div>Title</div>
+      <div>Author</div>
+      <div>Pages</div>
+      <div>Read</div>
+      <div>Toggle Read</div>
+      <div>Delete</div>
+    </div>
+
+    <div class="js-output display"></div>
+    <button class="add-new-book-btn js-add-btn">Add New Book</button>
+    
+    <form action="#" method="post" id="bookForm">
+      <div>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="Book Title" placeholder="Book Title" required>
+      </div>
+      <div>
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="Book Author" placeholder="Book Author" required>
+      </div>
+      <div>
+        <label for="pages">Book Pages:</label>
+        <input type="number" id="pages" name="Book Pages" placeholder="Book No. of Pages" required>
+      </div>
+      <div>
+        <label for="read">Read this Book?</label>
+        <input type="text" name="read" id="read" placeholder="Yes or No" required>
+      </div>
+      
+      <div>
+        <button type="submit" class="js-submit-btn submit-btn">Submit</button>
+      </div>
+      
+    </form>
+  </div>
+
+  <script src="library.js"></script>
+</body>
+</html>
