@@ -26,7 +26,7 @@ ul > li {
 
 a:link {
   text-decoration: none;
-  color: red;
+  color: purple;
   border: 1px solid rgb(195, 195, 195);
   border-radius: 10px;
   background-color: rgba(195, 195, 195, 0.855);
