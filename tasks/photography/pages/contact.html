@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../photography.css">
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <a href="../index.html"><img src="../logo/ifcgm-logo.jpg" alt="logo" height="40" width="40"></a>
+    </div>
+    <div id="links">
+      <a href="../index.html">Home</a>
+      <div class="events-box">
+        <a class="events" href="./events.html">Events</a>
+        <div class="dropdown-content">
+          <a href="./events.html#wedding">Wedding Photography</a>
+          <a href="./events.html#birthday">Birthday Photography</a>
+          <a href="./events.html#family">Family Photography</a>
+        </div>
+      </div>
+      <a href="./recent-work.html">Recent Work</a>
+      <a href="./about.html">About</a>
+      <a class="active" href="./contact.html">Contact</a>
+      <a href="#" id="close"><i class="fas fa-times"></i></a>
+    </div>
+    <div id="mobile">
+      <i id="bar" class="fas fa-outdent bar" ></i>
+    </div>
+  </header>
+
+  <div id="contact-banner">
+    <h1>GET IN TOUCH</h1>
+  </div>
+
+  <div class="msg">
+    <h2><strong>I’d love to hear from you! </strong></h2>
+
+    <p>Drop me a message if you’d like more information or want to have a chat. I’m based near Sheffield, South Yorkshire and work across the UK. I hold consultations face-to-face in Sheffield or by video call.</p>
+    <p>Fill out the contact form below and I’ll get back to you within a couple of days (usually sooner), or if you prefer drop me an email or message on social media!</p>
+  </div>
+  
+  <div id="info">
+    <form action="https://httpbin.org/post" method="post"> 
+      <p>Required fields are followed by <span aria-label="required">*</span>.</p>
+      <div>
+        <label for="first_name">First Name: <span aria-label="required">*</span></label>
+        <input type="text" id="first_name" name="first_name" autocomplete="given-name" required placeholder="First Name">
+      </div>
+      
+      <div>
+        <label for="last_name">Last Name: <span aria-label="required">*</span></label>
+        <input type="text" id="last_name" name="last_name" autocomplete="family-name" required placeholder="Last Name">
+      </div>
+
+      <div>
+        <label for="email">Email Address: <span aria-label="required">*</span></label>
+        <input type="email" name="email" id="email" autocomplete="off" required placeholder="Email Address">
+      </div>
+
+      <div>
+        <label for="phone-number">Phone Number: <span aria-label="required">*</span></label>
+        <input type="tel" name="phone-number" id="phone-number" required placeholder="Phone Number">
+      </div>
+
+      <div>
+        <label for="wedding-date">Wedding/Event Date: <span aria-label="required">*</span></label>
+        <input type="date" name="wedding-date" id="wedding-date" required placeholder="Wedding/Event Date">
+      </div>
+
+      <div>
+        <label for="wedding-location">Wedding/Event Location: <span aria-label="required">*</span></label>
+        <input type="text" name="wedding-location" id="wedding-location" required placeholder="Wedding/Event Location">
+      </div>
+      
+      <div>
+        <label for="service-needed">Please Select the Service you're interested in: <span aria-label="required">*</span></label>
+        <select name="service-needed" id="service-needed">
+          <option selected value="wedding Photography">Wedding Photography</option>
+          <option value="birthday Photography">Birthday Photography</option>
+          <option value="family Photography">Family Photography</option>
+          <option value="frame">Frame</option>
+        </select>
+      </div>
+      
+      <label id="textarea" for="more-info">Message: Any other information you would like to share?</label>
+      <textarea rows="10" name="more-info" id="more-info"></textarea>
+            
+      <button class="Submit">Submit</button>
+    </form>
+
+    <div class="contact">
+      <div class="studio-box">
+        <h3>The Studio</h3>
+        <div class="studio">
+          <p><span>Telephone:</span> +1234567890</p>
+          <p><span>Email:</span>pfyc@gmail.com</p>
+          <p>Unit 1 & 2 Bronx,</p>
+          <p>New York</p>
+          <p>USA</p>
+        </div>   
+      </div>
+      <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193147.27930895932!2d-74.00540027972552!3d40.85154321088468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28b553a697cb1%3A0x556e43a78ff15c77!2sBronx%2C%20NY%2C%20USA!5e0!3m2!1sen!2sch!4v1707755736577!5m2!1sen!2sch" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div id="social">
+      <h4>Follow us on Social</h4>
+      <div>
+        <a href="https://www.facebook.com/BayoAdewusiAde?sfnsn=scwspmo&mibextid=RUbZ1f "><img src="../img/icons/facebook.png" alt=""></a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/adewusi.adebayo?igsh=YzljYTk1ODg3Zg=="><img src="../img/icons/instagram.png" alt=""></a>
+      </div>
+      <div>
+        <a href="https://twitter.com/AdebayoAdewusi"><img class="twitter" src="../img/icons/twitter.png" alt=""></a>
+      </div>
+      <div>
+        <a href="https://wa.me/+2347017101305" target="_blank"><img src="../img/icons/whatsapp.png" alt=""></a>
+      </div>  
+    </div>
+    <div id="copyright"> &copy; 2024 PFYC--Unique-- </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
