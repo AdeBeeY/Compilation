@@ -1,3 +1,46 @@
-* {
-  background-color: red;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('img/sun-set.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 50px;
+  color: green;
+  font-weight: 800;
+}
+
+ul > li {
+  padding: 15px 8px;
+  list-style-type: disc;
+}
+
+a:link {
+  text-decoration: none;
+  color: red;
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 10px;
+  background-color: rgba(195, 195, 195, 0.855);
+  font-size: 25px;
+  padding: 7px 15px;
+}
+
+a:visited {
+  color: darkblue;
+  background-color: white;
+  border: 1px solid white;
+}
+
+a:hover {
+  color: green;
+  font-size: 30px;
 }
