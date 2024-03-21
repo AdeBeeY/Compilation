@@ -1,0 +1,897 @@
+body {
+  margin: 0;
+  padding: 0px;
+  background-color: black;
+  color: white;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  padding: 0px 20px;
+  position: relative;
+}
+
+/* HEADER */
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  align-items: center;
+  height: 40px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+header #logo img {
+  border-radius: 20px;
+}
+
+header #links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+#mobile,
+#close {
+  display: none;
+}
+
+#links .events-box {
+  position: relative;
+}
+
+#links .events-box .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  float: left;  
+  padding: 5px 5px;
+  box-shadow: 0px 2px 5px 0px rgb(0,0,0,0.5);
+  z-index: 1;
+}
+
+#links .events-box .dropdown-content a {
+  padding: 7px 7px;
+  color: white;
+  display: block;
+  font-weight: 700;
+}
+
+.events-box .dropdown-content a:hover {
+  background-color: black;
+  border-radius: 7px;
+}
+
+#links .events-box:hover .dropdown-content {
+  display: block;
+}
+
+header #links a:hover,
+header #links .active {
+  color: white;
+}
+
+header #links a {
+  color: rgb(173, 255, 47);
+  text-decoration: none;
+  text-wrap: nowrap;
+  transition: 0.3s ease;
+  padding: 0px 20px;
+}
+
+.banner {
+  background-image: url(./img/banner/banner1.png);
+  background-position-x: right;
+  background-position-y: center;
+  background-size: cover;
+  height: 20vh;
+  width: 100%;
+}
+
+.banner h1 {
+  color: black;
+  text-shadow: 3px 1px rgba(173, 255, 47, 0.5);
+  padding-left: 50px;
+  padding-top: 20px;
+  margin: 10px 0px;
+}
+
+.banner .ban {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.banner .span1 {
+  padding-right: 20px;
+}
+
+.ban.span2 {
+  padding-left: 100px;
+
+}
+
+.slide-box {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  right: 0;
+  width: 100%;
+  height: 70vh;
+  animation: animate 16s ease-in-out infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  z-index: 60;
+}
+
+@keyframes animate {
+  0%, 100% {
+    background-image: url(./img/wedding/wedding-couple.jpg);
+  }
+  20% {
+    background-image: url(./img/wedding/wedding001.jpg);
+  }
+  40% {
+    background-image: url(./img/wedding/wedding1.jpg);
+  }
+  60% {
+    background-image: url(./img/wedding/wedding2.jpg);
+  }
+  80% {
+    background-image: url(./img/wedding/wedding3.jpg);
+  }
+  90% {
+    background-image: url(./img/family/fam1b.jpg);
+  }
+}
+
+.homepage {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  z-index: 80;
+}
+
+.whatsapp {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 80px;
+  width: 80px;
+}
+
+.whatsapp img {
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  position: static;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: center;
+  border-top: 1px solid rgb(72, 72, 72);
+}
+
+footer #social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer #social h4 {
+  font-size: 14px;
+  color: white;
+  padding-right: 30px;
+}
+
+footer #social div {
+  height: 30px;
+  width: 30px;
+  padding: 0 10px;
+}
+
+footer #social img {
+  max-height: 100px;
+  max-width: 100%;
+}
+
+footer #social .twitter {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+#copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  border-top: 1px solid rgb(72, 72, 72);
+}
+
+/* Events */
+.event-h1 {
+  font-size: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 4px 1px yellowgreen;
+  padding: 30px 5px 10px 5px;
+}
+ 
+#services {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px 50px 0px;
+  border-bottom: 1px solid rgb(90, 97, 75);
+}
+
+#services div {
+  height: 300px;
+  width: 100%;
+  margin: 0px 10px;
+  text-align: center;
+  text-shadow: 5px 2px black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#services div:hover {
+  box-shadow: 1px 1px 10px 1px rgb(255, 255, 255);
+}
+
+#services .wedding {
+  background-image: url('./img/wedding/wedding1.jpg');
+}
+
+#services .birthday {
+  background-image: url('./img/birthday/cake3.jpg');
+}
+
+#services .family {
+  background-image: url(./img/family/fam1b.jpg);
+}
+
+#services .frame {
+  background-image: url(./img/frame/frame9.jpg);
+}
+
+#services .wedding,
+#services .birthday,
+#services .family,
+#services .frame {
+  background-size: cover;
+  background-color: black;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#services .wedding a,
+#services .birthday a,
+#services .family a,
+#services .frame a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 800; 
+  color: white;
+}
+
+.img-box .video {
+  height: 400px;
+  width: auto;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+}
+
+#wedding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: auto;
+}
+
+#wedding .joe,
+#wedding .jane,
+#wedding .others {
+  width: auto;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+#wedding .img-box,
+#birthday .img-box,
+#family .img-box,
+#other-services .img-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-box div {
+  height: 400px;
+  width: auto;
+  padding: 20px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.img-box div:hover {
+  box-shadow: 1px 1px 10px 1px rgb(255, 255, 255);
+}
+
+.img-box img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#wedding .joe h3,
+#wedding .jane h3,
+#wedding .others h3 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+#birthday .general {
+  width: auto;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+#birthday .general h3 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+#family .genearl-family {
+  width: auto;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+#family .general-family h3 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+#other-services .frame {
+  width: auto;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+#other-services .frame h3 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.back-to-top {
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.back-to-top:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+/* Recent Work */
+.banner.recent {
+  background-image: url('./img/banner/banner2.png');
+  height: 15vh;
+}
+
+.span2.recent {
+  font-size: 25px;
+}
+
+/* About */
+#about-banner {
+  background-image: url(./img/banner/banner3.jpg);
+}
+
+#about-banner h1,
+#contact-banner h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  text-shadow: 4px 1px yellowgreen;
+  text-align: center;
+}
+
+/* Moving Text */
+marquee {
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+#about {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .about-h1 {
+  color: black;
+  text-shadow: 2px 1px rgb(48, 240, 10);
+}
+
+#about p {
+  color: black;
+  width: 70%;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+/* Contact */
+#contact-banner,
+#about-banner {
+  background-size: cover;
+  padding: 20px 10px 150px 10px;
+  background-color: black;
+  background-position-y: bottom;
+}
+
+#contact-banner {
+  background-image: url(./img/frame/frame8.jpg);
+}
+
+.msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:70%;
+  margin: 10px auto;
+}
+
+.msg h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(173, 255, 47);
+}
+
+.msg p {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+#info {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto 50px auto;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+}
+  iframe,
+  .location {
+    width: 100%;
+    height: 500px;
+  }
+
+form {
+  padding: 20px;
+  width: 40%;
+}
+
+form div {
+  margin: 20px;
+  min-height: 20px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+form textarea,
+#textarea {
+  margin: 5px 5px 5px 19px;
+  display: block;
+  width: 93%;
+}
+
+form label {
+  font-size: 18px;
+  color: yellowgreen;
+}
+
+form input,
+select {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  border: 1px solid yellowgreen;
+  color: black;
+  font-size: 16px;
+  font-stretch: 100%;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: start;
+  margin-top: 5px;
+}
+
+form #wedding-date,
+form option {
+  height: 35px;
+}
+
+form label span {
+  font-size: 15px;
+  color: white;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  border-radius: 8px;
+  margin: 10px 0px 10px 19px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Start Media Query for Ipad */
+@media screen and (max-width: 1030px) {
+ 
+  /* Home Page */
+   .banner {
+       z-index: 5;
+   }
+ 
+    .slide-box {
+      top: 200px;
+      height: 70vh;
+    }
+ 
+   .whatsapp {
+     right: 0px;
+     height: 90px;
+     width: 90px;
+   }
+  /* Event Page */
+    #services {
+    flex-wrap: wrap;
+}
+
+     #services div {
+      height: 250px;
+      width: 250px;
+      margin: 10px 10px;
+  }
+ 
+  .event-h1 {
+    font-size: 40px;
+    padding: 10px 5px 10px 5px;
+}
+    
+   .img-box div {
+    height: 300px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+   /* Recent Work Page */
+ 
+     .banner.recent {
+       height: 10vh;
+   }
+   /* About Page */
+ 
+     #contact-banner, #about-banner {
+       padding: 5px 5px;
+       height: 20vh;
+   }
+ 
+   #about-banner h1, #contact-banner h1 {
+     font-size: 40px;
+   }
+ 
+   #about .about-h1 {
+     font-size: 25px;
+   }
+   #about p {
+    width: 80%;
+}
+   /* Contact Page */
+   .msg {
+    width: 80%;
+    }
+
+     .msg h2 {
+       font-size: 25px;
+   }
+
+   form {
+    width: 80%;
+  }
+  form textarea, #textarea {
+    margin: 5px 5px 5px 19px;
+    display: block;
+    width: 92%;
+  }
+   .contact {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 5px;
+   }
+   .studio-box {
+    text-align: center;
+   }
+   iframe {
+    width: auto;
+    height: 300px;
+   }
+ }
+
+/* Start Media Querry for Mobile Phones */
+@media screen and (max-width: 577px) {
+  .whatsapp {
+    left: 0;
+    height: 50px;
+    width: 50px;
+  }
+
+  header #links {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 150px;
+    background-color: black;
+    z-index: 55;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+    padding: 40px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  header #links.active {
+    right: 0px;
+  }
+
+  #mobile,
+  #close {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: rgb(173, 255, 47);
+    font-size: 25px;
+    padding-right: 20px;
+  }
+
+ #links a,
+ .events-box {
+   margin-bottom: 10px;
+ }
+
+ #close {
+   position: absolute;
+   margin-top: 10px;
+   top: 0;
+   font-size: 20px;
+ }
+
+ /* Adjust the Events dropDown list */
+ #links .events-box .dropdown-content {
+   background-color: black;
+   margin: 0;
+   padding: 5px;
+   margin-left: -30px;
+   border-radius: 10px;
+ }
+ .events-box .dropdown-content a:hover {
+   background-color: white; 
+ }
+ #links .events-box .dropdown-content a {
+   color: rgb(173, 255, 47);
+   padding: 4px 4px;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 15px;
+ }
+ 
+ /* Events */   
+ #services {
+   flex-wrap: wrap;
+   padding: 20px 0px 20px 0px;
+ }
+ 
+ #services div {
+   height: 120px;
+   width: 120px;
+   margin: 10px 5px;
+   padding: 10px;
+ }
+
+ .event-h1 {
+   font-size: 25px;
+   padding: 5px;
+ }
+
+  #wedding .joe h3,
+  #wedding .jane h3,
+  #wedding .others h3,
+  #birthday .general h3,
+  #family .general-family h3,
+  #other-services .frame h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  #wedding,
+  #birthday,
+  #family,
+  #other-services {
+    padding: 10px;
+  }
+
+  #wedding .joe,
+  #wedding .jane,
+  #wedding .others,
+  #birthday .general,
+  #family .general-family,
+  #other-services .frame {
+    padding-bottom: 30px;
+  }
+
+ .img-box div {
+    height: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+ .img-box .video {
+    height: 200px;
+    width: auto;
+  }
+
+  .back-to-top {
+    padding: 7px 10px;
+  }
+
+  footer #social h4 {
+    font-size: 12px;
+    padding-right: 5px;
+  }
+
+  /* RECENT WORK */
+  .banner h1 {
+    display: none;
+  }
+  .banner .ban {
+    font-size: 25px;
+  }
+  .ban.span2 {
+    padding-left: 0px;
+  }
+
+  .banner.recent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin-bottom: 10px;
+  }
+
+  /* ABOUT */
+  #contact-banner, #about-banner {
+    height: 10vh;
+  }
+  #about-banner h1, #contact-banner h1 {
+    font-size: 30px;
+  }
+  #about p {
+    width: 85%;
+  }
+  #about .about-h1 {
+    margin: 0;
+  }
+
+  /* CONTACT */
+  .msg {
+    width: 90%;
+  }
+
+  #info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto 30px auto;
+}
+
+  form {
+    padding: 10px;
+    width: 90%;
+    margin-left: 0;
+  }
+  form textarea, #textarea {
+    margin-left: 20px;
+    width: 90%;
+  }
+  .studio-box {
+    width: 250px;
+    text-align: center;
+  }
+  .contact {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+  .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 300px;
+  }
+  iframe {
+    height: 300px;
+    width: 300px;
+   }
+}
