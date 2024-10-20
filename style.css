@@ -1,5 +1,5 @@
 body {
-  padding: 0;
+  padding: 100px, 0px, 200px, 0px;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -10,7 +10,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: auto;
 }
 
 h1 {
