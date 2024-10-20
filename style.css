@@ -46,6 +46,7 @@ a:hover {
 }
 
 footer {
+  margin-top: 200px;
   text-align: center;
   position: fixed;
   bottom: 0;
