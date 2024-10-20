@@ -1,6 +1,6 @@
 body {
-  padding: 100px, 0px, 200px, 0px;
   margin: 0;
+  padding-bottom: 200px;
   box-sizing: border-box;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
@@ -22,11 +22,7 @@ h1 {
 ul > li {
   padding: 15px 8px;
   list-style-type: disc;
-}
-
-ul > li:last-child {
-  margin-bottom: 200px;
-  background-color: red;
+  margin-bottom: 10px;
 }
 
 a:link {
@@ -51,10 +47,12 @@ a:hover {
 }
 
 footer {
-  margin-top: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  color: white;
 }
